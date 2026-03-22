@@ -1,13 +1,13 @@
 function Calculate(radius, height) {
 
-    const r = parseFloat(radius);
-    const h = parseFloat(height);
+    const radiusNum = parseFloat(radius)
+    const heightNum = parseFloat(height)
 
-    if (isNaN(r) || isNaN(h)) {
-        return null;
+    if (isNaN(radiusNum) || isNaN(heightNum)) {
+        return null
     }
 
-    return Math.PI * r * r * h;
+    return Math.PI * radiusNum * radiusNum * heightNum
 }
 
 export default Calculate
